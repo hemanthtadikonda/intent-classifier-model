@@ -7,7 +7,7 @@ model = IntentModel()
 
 @app.route("/health")
 def health():
-    return "OK", 200
+    return jsonify({"status":"ok"}) , 200
 
 @app.route("/predict", methods=["POST"])
 def predict():
