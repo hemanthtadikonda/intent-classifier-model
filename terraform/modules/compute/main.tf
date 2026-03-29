@@ -75,7 +75,7 @@ resource "aws_acm_certificate_validation" "cert_validation" {
 
 resource "aws_launch_template" "lt" {
   name_prefix   = "intent-lt"
-  image_id      = data.aws_ami.ubuntu.id
+  image_id      = "ami-0ec10929233384c7f"
   instance_type = var.instance_type
   key_name      = var.key_name
 
